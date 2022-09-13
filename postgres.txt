@@ -1,0 +1,1 @@
+ psql -U postgres -d db_name -c "UPDATE movimenti_contabili SET rif_n = 'B2B7-4334'  where id = '3979025a-631edacd0ff6'  ";
