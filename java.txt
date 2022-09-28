@@ -1,3 +1,7 @@
 Change java env
-- export JAVA_HOME = `/usr/libexec/java_home -v 1.8` or 17
+- export JAVA_HOME=`/usr/libexec/java_home -v1.8` or 17
 check - java -version
+
+nano ~/.zshenv                                                                                              10:14:49 
+source ~/.zshenv                                                                                            10:17:20 
+echo $JAVA_HOME   
