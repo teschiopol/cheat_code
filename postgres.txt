@@ -20,3 +20,6 @@ Allow logical replication in pga_hba.conf
 select pg_create_logical_replication_slot('slot1', 'pgoutput')
 
 CREATE PUBLICATION pub_users FOR TABLE public.users;
+
+- Need Docker (Be sure to share file permission)
+- Need Airbyte (https://docs.airbyte.com/quickstart/deploy-airbyte/)
