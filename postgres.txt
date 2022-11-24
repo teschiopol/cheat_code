@@ -1,1 +1,22 @@
  psql -U postgres -d db_name -c "UPDATE movimenti_contabili SET rif_n = 'B2B7-4334'  where id = '3979025a-631edacd0ff6'  ";
+
+******************************************
+CDC Postgres
+
+show config_file;
+
+cd /Library/PostgreSQL/13/data/postgresql.conf
+
+wal_level = logical
+
+su - postgres
+
+cd bin
+
+./pg_ctl -D /Library/PostgreSQL/13/data restart
+
+Allow logical replication in pga_hba.conf
+
+select pg_create_logical_replication_slot('slot1', 'pgoutput')
+
+CREATE PUBLICATION pub_users FOR TABLE public.users;
