@@ -13,7 +13,7 @@ su - postgres
 
 cd bin
 
-./pg_ctl -D /Library/PostgreSQL/13/data restart
+./pg_ctl -D /Library/PostgreSQL/13/data restart // sudo systemctl restart postgresql-9.6.service
 
 Allow logical replication in pga_hba.conf
 
