@@ -1,0 +1,19 @@
+- Create Project
+
+laravel new
+
+- Run project
+
+php artisan serve
+
+- Create model
+
+php artisan make:model [name]
+
+- Create migration
+
+php artisan make:migration [name]
+
+- Run migration
+
+php artisan migrate
